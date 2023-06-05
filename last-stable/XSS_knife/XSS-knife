@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Define the file name based on time now
+filename="logs/XSS-knife_$(date +'%d%m%y%H%M').log"
+
+#Run the python xss engine with arguments
+python3 -u runxss.py $1 $2 $3 $4 $5 $6 | tee tempfile
+
+#Kills the run if there is no arguments
+if [ -z $1 ];then
+	exit
+fi
+
+#if the argument is "help" or "--version", do not log.
+if [ $1 == "--help" ] || [ $1 == "--version" ] || [ $1 == "-v" ] || [ $1 == "-h" ];then
+	rm -rf tempfile
+else
+#if not, create a log, separating the color strings, making a clean text
+sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" tempfile > $filename
+rm -rf tempfile
+echo "Log file saved in $filename"
+fi

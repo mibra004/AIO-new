@@ -1,0 +1,5 @@
+bs4
+requests
+nyawc
+fake_useragent
+

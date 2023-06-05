@@ -1,0 +1,7 @@
+		*****Logs for Inclusion Vulnerability Scanner for Local File *****
+
+Processed Link:
+http://localhost/second/index.php?page=
+
+Local File Inclusion Link:
+http://localhost/second/index.php?page=/etc/passwd

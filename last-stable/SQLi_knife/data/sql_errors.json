@@ -1,0 +1,51 @@
+{
+  "PostgreSQL": [
+    "PostgreSQL.*ERROR",
+    "Warning.*\\Wpg_.*",
+    "Warning.*PostgreSQL"
+  ],
+  "Microsoft SQL Server": [
+    "Warning.*mssql_",
+    "Msg \\d+, Level \\d+, State \\d+",
+    "Unclosed quotation mark after the character string",
+    "OLE DB.* SQL Server",
+    "(\\W|\\A)SQL Server.*Driver",
+    "Warning.*odbc_.*",
+    "Microsoft OLE DB Provider for ODBC Drivers"
+  ],
+  "Microsoft Access": [
+    "Microsoft Access Driver",
+    "Access Database Engine",
+    "Microsoft JET Database Engine",
+    ".*Syntax error.*query expression"
+  ],
+  "Oracle": [
+    "\\bORA-[0-9][0-9][0-9][0-9]",
+    "Oracle error",
+    "Warning.*oci_.*",
+    "Microsoft OLE DB Provider for Oracle"
+  ],
+  "IBM DB2": [
+    "CLI Driver.*DB2",
+    "DB2 SQL error"
+  ],
+  "SQLite": [
+    "SQLite/JDBCDriver",
+    "System.Data.SQLite.SQLiteException"
+  ],
+  "MySQL": [
+    "SQL syntax.*MySQL",
+    "Warning.*mysql_.*",
+    "MySQL Query fail.*",
+    "SQL syntax.*MariaDB server"
+  ],
+  "Informix": [
+    "Warning.*ibase_.*",
+    "com.informix.jdbc"
+  ],
+  "Sybase": [
+    "Warning.*sybase.*",
+    "Sybase message"
+  ]
+}
+

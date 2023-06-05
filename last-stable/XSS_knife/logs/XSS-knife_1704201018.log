@@ -1,0 +1,11 @@
+
+
+Developed By Abdul ( GitHub https://github.com/0xx7 )
+Enjoy hunting :)
+
+
+Usage example: python XSS-knife.py http://brutelogic.com.br/xss.php?a=
+Usage example 2: with custom user agent: python XSS-knife.py http://brutelogic.com.br/xss.php?a= --user-agent "a custom user-agent" 
+--help or -h: Show this!
+--version or -v: Show the version of XSS-Knife
+--user-agent: Set the user agent
